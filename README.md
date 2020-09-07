@@ -2,3 +2,4 @@
 
 ## Participantes
 - Manuel Jesús Núñez Ruiz
+- Ignasi Camacho Redó
