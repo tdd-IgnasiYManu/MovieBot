@@ -1,4 +1,4 @@
-# Plantilla del curso programación para QA
+# MovieBot
 ## Descripción
 Problema a resolver: queremos desarrollar una herramienta que permita a los usuarios buscar información sobre películas y que le recomiende otras películas relacionadas con dicha búsqueda.
 
