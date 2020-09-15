@@ -1,0 +1,5 @@
+{
+	"language" : "Python",
+	"build" : "src/pyproject.toml",
+	"ficheros" : ["src/database/db.py","src/moviedb/moviedbapi.py","src/telegrambot/moviebot.py"]
+}
