@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "MovieBot"
 version = "0.0.1"
-description = "A bot that constains movie information from TheMovieDB"
+description = "A bot that contains information about movies from TheMovieDB"
 authors = ["ManuelJNunez <mjnunez@correo.ugr.es>", "IgnasiCR <ignasicr@correo.ugr.es>"]
 license = "GPL-3.0"
 
