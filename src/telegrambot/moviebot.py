@@ -3,6 +3,8 @@
 import pyrogram as pg
 import os
 
+API_KEY = os.environ.get("API_KEY")
+
 def enviarMensaje(idChat, texto):
   pass
 
