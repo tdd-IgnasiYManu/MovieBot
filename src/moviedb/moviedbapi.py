@@ -2,9 +2,9 @@
 import os
 import requests as rq
 from dotenv import load_dotenv
-from pathlib import Path
+import pathlib as pl
 
-env_path = Path('.') / '.env'
+env_path = pl.Path(__file__).parent / '.env'
 load_dotenv(dotenv_path=env_path)
 
 TMDb_KEY = os.getenv('TMDb_KEY')
