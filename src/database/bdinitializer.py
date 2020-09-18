@@ -24,3 +24,4 @@ class UserInfo(Model):
 if __name__ == '__main__':
     psql_db.connect()
     psql_db.create_tables([UserInfo])
+    psql_db.close()
