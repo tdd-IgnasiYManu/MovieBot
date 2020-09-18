@@ -11,9 +11,17 @@ pyrogram = "^1.0.7"
 Flask = "^1.1.2"
 peewee = "^3.13.3"
 requests = "^2.24.0"
+<<<<<<< HEAD
 python-dotenv = "^0.14.0"
 pathlib = "^1.0.1"
 tgcrypto = "^1.2.1"
+||||||| 5ca5ba1
+=======
+python-dotenv = "^0.14.0"
+pathlib = "^1.0.1"
+tgcrypto = "^1.2.1"
+psycopg2-binary = "^2.8.6"
+>>>>>>> master
 
 [tool.poetry.dev-dependencies]
 
