@@ -13,7 +13,7 @@ Después de discutir en la Issues [Herramientas a usar](https://github.com/tdd-I
 - Usaremos `Python` con sus bibliotecas `Pyrogram` debido a la calidad de su documentación y el ya conocido `requests` para hacer llamadas a las APIs http.
 - Instalaremos una herramienta de configuración remota (`etcd`) por comodidad.
 - Nuestro SGBD será `PostgreSQL`.
-- El despliegue será en `GCP` ya que nos dan 300$ de prueba.
+- El despliegue será en `Heroku` por ser gratuito.
 
 ## Participantes
 
