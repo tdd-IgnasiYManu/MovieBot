@@ -1,12 +1,14 @@
 #!/usr/bin/env python
-from bdinitializer import UserInfo
+from .bdinitializer import UserInfo
 
 def add_film(user_id: int, film_id: int):
     query = UserInfo.select().where(UserInfo.user_id == user_id)
     user = query.first()
 
+    updated_rows = 1
+
     if user == None:
-        UserInfo.create(user_id=user_id, film_id=[film_id])
+        UserInfo.create(user_id=user_id, favourite_films=[film_id])
     else:
         if film_id not in user.favourite_films:
             user.favourite_films.append(film_id)
