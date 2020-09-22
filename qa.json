@@ -1,5 +1,6 @@
 {
 	"lenguaje" : "Python",
 	"build" : "src/pyproject.toml",
-	"ficheros" : ["src/database/bdinitializer.py","src/moviedb/moviedbapi.py","src/telegrambot/moviebot.py"]
+	"ficheros" : ["src/database/bdinitializer.py","src/moviedb/moviedbapi.py","src/telegrambot/moviebot.py"],
+	"test": ["tests/test_database.py", "tests/test_moviedb.py"]
 }
