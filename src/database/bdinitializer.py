@@ -4,7 +4,7 @@ import pathlib as pl
 from playhouse.postgres_ext import *
 from dotenv import load_dotenv
 
-env_path = pl.Path(__file__).parent / '.env'
+env_path = pl.Path('.') / '.env'
 load_dotenv(dotenv_path=env_path)
 
 DB_NAME = os.getenv('DB_NAME')
