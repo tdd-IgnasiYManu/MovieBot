@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/tdd-IgnasiYManu/MovieBot.svg?branch=master)](https://travis-ci.com/tdd-IgnasiYManu/MovieBot)
+
 # MovieBot
 ## Descripción
 Problema a resolver: queremos desarrollar una herramienta que permita a los usuarios buscar información sobre películas y que le recomiende otras películas relacionadas con dicha búsqueda.

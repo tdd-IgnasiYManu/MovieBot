@@ -1,3 +1,29 @@
-language: minimal
+language: python
+python:
+  - '3.8'
+  - '3.8.3'
 
-script: /bin/true
+services:
+  - postgresql
+
+before_script:
+  - psql -c 'create database test;' -U postgres
+  - psql -c "ALTER USER postgres PASSWORD 'bubo';" -U postgres
+  - psql -c 'GRANT ALL PRIVILEGES ON DATABASE test TO postgres;' -U postgres
+
+env:
+  global:
+    - DB_NAME: test
+    - DB_USER: postgres
+    - DB_PASSWORD: bubo
+    - DB_HOST: 127.0.0.1
+    - language: es-ES
+    - secure: HHYkXbnMMWAFOWusFitXiIB1qugTLJ00F898hoS+EUKuk2wIutl/VSiX8v5KrvzCrqPZrP/Mwt3+NMKG4B+8SH1RbT4fT+btGJJp3KQPLQl/BL8/6FKgWpHpyzmgCskztUXg4lBbTUhWhBq8tYoYP+RNGcDUdT3Gu4srP8J5mc7RoFah3YGwcR/Sxk/9O7Jy65mBi3S0oUzgh+wI4ZvkK6G8agog/ZZaKMhJQlgiXEk/Pd0b4RVS2mAqZs2PcOYd/QJBeyZQ4+NRNZWT40YbSyUbmdDai2HT3CcoJRt7+7MQyZhlXvQRwJLvavBv5rmoyt7AP1oshUdybHnjJ1bSFPUofj75uD7fF7KrkU0fgEwTmoZF/QxSOeFOrepbzJTVG/AiGaOK7cQ+bjPz95T6axRFe669ppjDbbRfTbnksGm2QE46PMEjyWETVf0KDLJDMdh/M5t15AJr6mMGJtMoqO9gTJNCaMJ28nvrDS6VtjcZNIRcJnMnk+sGMsBnTuzdxlZgVXIdvdFgrManN/kYVLnvg6KCpWnV0LNRZniQvK0kBYl56v5BcgTWwHVNMm2d+OXcUAgd81gkqfNkBr84sKG6C6ci/3azxgHdStVniTqSq3Xr99sliO8mA7CYit8HVd95b0U7j6fgG8sYGj+pyY522sLkJfXbM6S5S+RI1II=
+
+install:
+  - pip install poetry
+  - poetry install
+
+script:
+  - poetry run src/database/bdinitializer.py
+  - poetry run task test
