@@ -13,12 +13,12 @@ before_script:
 
 env:
   global:
-  - DB_NAME: test
-  - DB_USER: postgres
-  - DB_PASSWORD: bubo
-  - DB_HOST: 127.0.0.1
-  - language: es-ES
-  - secure: ei4TdjQuZox0vlI1vT/MkXNselpt6jA9YYJPEmo5v7B/NcJoYx8+yDuUDOKLfuuPSO8S9qhI+lA4ubZdDBAuxnX7/RsbEbvnSRfDVq7094oh6Z/0Zr3w8YRduueEaXnQsbr9yN5cpC8czJ0qPEps/F/f9luzoagcdv8OYDwRGO22MAiqUNuJmHMRJdnIwZH7p/9y2tJaS28qVnwpJpk1q3TJTDbC2TSV13L9WxJoM3CSh81N5EHHw2cB6/niXOOD+p//VP+0nb4KdrYWikHSysNln72bqTFxwfcqk/YPqxviw3MguHt8wxUtYRRvFGt0+dnn7nCh9rKPws7EHjugOxgQScAKpwNcrAMs5CxAwx+DAOj6EQ1itxs0X8N+QR+Sp2o+swYKn4oZUGbRM+FcDzyMUWiWqOig6HshOX8kU+UFA7tJV8kXJgv37CZ4aphwVSAQYlr5mNjhQvT7tI2qVw1kqnu0yLGe7Ks4aCMDTxrRZDFL462b0PCZEFrENvLPXEbWqLJZKyeV3pqMihI8jAQOLRcmAJXDy0shV113x3s4Y5U6Upryxeb1RLwOCNIOBo4w41fy0g8YpRgfP8HX2yo0QtY4EFs8bvi9Jaq6vw9/KNNHvJdhHfQnWhu48RgYt6gJNlN4rZCeV+M9+eFMlyTSl+/0tr3cUmQeenbLD+Q=
+    - DB_NAME: test
+    - DB_USER: postgres
+    - DB_PASSWORD: bubo
+    - DB_HOST: 127.0.0.1
+    - language: es-ES
+    - secure: HHYkXbnMMWAFOWusFitXiIB1qugTLJ00F898hoS+EUKuk2wIutl/VSiX8v5KrvzCrqPZrP/Mwt3+NMKG4B+8SH1RbT4fT+btGJJp3KQPLQl/BL8/6FKgWpHpyzmgCskztUXg4lBbTUhWhBq8tYoYP+RNGcDUdT3Gu4srP8J5mc7RoFah3YGwcR/Sxk/9O7Jy65mBi3S0oUzgh+wI4ZvkK6G8agog/ZZaKMhJQlgiXEk/Pd0b4RVS2mAqZs2PcOYd/QJBeyZQ4+NRNZWT40YbSyUbmdDai2HT3CcoJRt7+7MQyZhlXvQRwJLvavBv5rmoyt7AP1oshUdybHnjJ1bSFPUofj75uD7fF7KrkU0fgEwTmoZF/QxSOeFOrepbzJTVG/AiGaOK7cQ+bjPz95T6axRFe669ppjDbbRfTbnksGm2QE46PMEjyWETVf0KDLJDMdh/M5t15AJr6mMGJtMoqO9gTJNCaMJ28nvrDS6VtjcZNIRcJnMnk+sGMsBnTuzdxlZgVXIdvdFgrManN/kYVLnvg6KCpWnV0LNRZniQvK0kBYl56v5BcgTWwHVNMm2d+OXcUAgd81gkqfNkBr84sKG6C6ci/3azxgHdStVniTqSq3Xr99sliO8mA7CYit8HVd95b0U7j6fgG8sYGj+pyY522sLkJfXbM6S5S+RI1II=
 
 install:
   - pip install poetry
