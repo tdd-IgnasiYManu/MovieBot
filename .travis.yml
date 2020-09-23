@@ -9,7 +9,7 @@ services:
 before_script:
   - psql -c 'create database test;' -U postgres
   - psql -c "ALTER USER postgres PASSWORD 'bubo';" -U postgres
-  - psql -c 'GRANT ALL PRIVILEGES ON test TO postgres;'
+  - psql -c 'GRANT ALL PRIVILEGES ON DATABASE test TO postgres;'
 
 env:
   global:
