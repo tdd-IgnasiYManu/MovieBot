@@ -1,5 +1,6 @@
 # MovieBot
-[![Build Status](https://travis-ci.com/tdd-IgnasiYManu/MovieBot.svg?branch=master)](https://travis-ci.com/tdd-IgnasiYManu/MovieBot)
+[![Build Status](https://travis-ci.com/tdd-IgnasiYManu/MovieBot.svg?branch=master)](https://travis-ci.com/tdd-IgnasiYManu/MovieBot) [![codecov](https://codecov.io/gh/tdd-IgnasiYManu/MovieBot/branch/master/graph/badge.svg)](https://codecov.io/gh/tdd-IgnasiYManu/MovieBot)
+
 ## Descripción
 Problema a resolver: queremos desarrollar una herramienta que permita a los usuarios buscar información sobre películas y que le recomiende otras películas relacionadas con dicha búsqueda.
 
