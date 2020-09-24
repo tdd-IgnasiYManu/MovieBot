@@ -16,7 +16,6 @@ env:
     - DB_USER: postgres
     - DB_PASSWORD: bubo
     - DB_HOST: 127.0.0.1
-    - language: es-ES
 
 install:
   - pip install poetry
@@ -24,7 +23,7 @@ install:
 
 script:
   - poetry run src/database/bdinitializer.py
-  - poetry run task test
+  - poetry run task coverage
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
